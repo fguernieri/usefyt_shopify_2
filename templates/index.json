@@ -40,10 +40,10 @@
         "padding-block-end": 72
       }
     },
-    "collection_list_BmRhK7": {
+    "collection_list_tiKtqh": {
       "type": "collection-list",
       "blocks": {
-        "group_gxGyMX": {
+        "group_jkxGtH": {
           "type": "group",
           "name": "t:names.header",
           "settings": {
@@ -52,7 +52,7 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
             "gap": 12,
             "width": "fill",
@@ -83,11 +83,11 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_wfCB7N": {
+            "text_UBHy7n": {
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h5><strong>C A T E G O R I A S </strong></h5>",
+                "text": "<h3>Shop by collection</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -111,7 +111,7 @@
             }
           },
           "block_order": [
-            "text_wfCB7N"
+            "text_UBHy7n"
           ]
         },
         "static-collection-card": {
@@ -131,7 +131,7 @@
             "border_radius": 0
           },
           "blocks": {
-            "collection_title_wVjakg": {
+            "collection_title_fDybW3": {
               "type": "collection-title",
               "name": "t:names.collection_title",
               "settings": {
@@ -175,24 +175,27 @@
             }
           },
           "block_order": [
-            "collection_title_wVjakg"
+            "collection_title_fDybW3"
           ]
         }
       },
       "block_order": [
-        "group_gxGyMX"
+        "group_jkxGtH"
       ],
       "name": "t:names.collections_grid",
       "settings": {
-        "collection_list": [],
+        "collection_list": [
+          "bem-estar-movimento",
+          "performance-estilo"
+        ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "columns": 4,
+        "columns": 3,
         "mobile_columns": "2",
-        "mobile_card_size": "44cqw",
-        "columns_gap": 12,
+        "mobile_card_size": "60cqw",
+        "columns_gap": 8,
         "bento_gap": 8,
-        "rows_gap": 12,
+        "rows_gap": 8,
         "max_collections": 4,
         "icons_style": "arrow",
         "icons_shape": "none",
@@ -999,7 +1002,7 @@
   },
   "order": [
     "hero_jVaWmY",
-    "collection_list_BmRhK7",
+    "collection_list_tiKtqh",
     "hero_HCwTAz",
     "product_list_fa6P9H",
     "section_YzN9tb",
