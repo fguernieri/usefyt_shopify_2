@@ -138,7 +138,7 @@
                   "name": "t:names.product_review_stars",
                   "settings": {
                     "stars_style": "shaded",
-                    "show_number": true,
+                    "show_number": false,
                     "rating_color": "primary",
                     "type_preset": "paragraph",
                     "alignment": "left"
