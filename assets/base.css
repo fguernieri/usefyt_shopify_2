@@ -2086,6 +2086,14 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   border-radius: var(--variant-picker-swatch-radius);
 }
 
+body.template-product {
+  background-color: #f6f1ea;
+}
+
+body.template-product .main-content {
+  padding-block: clamp(32px, 6vw, 80px);
+}
+
 .sticky-content {
   position: sticky;
   top: var(--sticky-header-offset, 0);
