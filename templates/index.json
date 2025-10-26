@@ -390,7 +390,7 @@
               "type": "_product-card-gallery",
               "name": "t:names.product_card_media",
               "settings": {
-                "image_ratio": "adapt",
+                "image_ratio": "portrait",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -460,7 +460,7 @@
       },
       "name": "t:names.products_grid",
       "settings": {
-        "collection": "",
+        "collection": "bem-estar-movimento",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 4,
