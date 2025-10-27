@@ -1,14 +1,16 @@
-<div class="footer__item footer__item--Pagamento-Seguranca" margin-right= 120px;>
+<div class="footer__item footer__item--Pagamento-Seguranca">
   <style>
     .footer__item.footer__item--Pagamento-Seguranca {
       grid-column: span 2;
       width: 100%;
+      max-width: 1200px; /* mesmo limite do footer principal */
+      margin: 0 auto; /* centraliza dentro do layout */
     }
 
     .footer__item-title.heading.heading--small {
       display: block;
       text-align: right;
-      margin-right: 40px;
+      margin-right: 0;
       font-weight: bold;
     }
 
@@ -18,8 +20,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
-      gap: 2px;
-      margin-right: 40px;
+      gap: 4px;
     }
 
     .separator-footer {
@@ -31,7 +32,7 @@
     }
 
     .payment-icon {
-      width: 55px;0
+      width: 55px;
       height: 38px;
       border-radius: 6px;
       line-height: 40px;
@@ -49,7 +50,6 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      margin-right: 40px;
       margin-top: 5px;
     }
 
@@ -59,7 +59,6 @@
       align-items: center;
       gap: 10px;
       margin-top: 5px;
-      margin-right: 40px;
     }
 
     .selo img {
@@ -73,16 +72,10 @@
       .footer__collapsible-content {
         text-align: center;
         align-items: center;
-        margin-right: 0;
-        margin-top: 5px;
-
       }
       .payment-box,
       .selos-wrap {
         justify-content: center;
-        margin-right: 0;
-        margin-top: 5px;
-
       }
     }
   </style>
