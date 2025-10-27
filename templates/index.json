@@ -1110,7 +1110,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h3>Frequently asked questions</h3>",
+            "text": "<h3>Perguntas Frequentes</h3>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -1154,7 +1154,7 @@
             "accordion_row_gjtGVT": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "What is the return policy?",
+                "heading": "Quando recebo meu pedido?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1163,7 +1163,7 @@
                 "text_4JyQ33": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn’t the case, let us know and we’ll do our best to work with you to make it right. </p>",
+                    "text": "<p>Nosso prazo médio de entrega é de 7 a 15 dias úteis, com código de rastreamento enviado por e-mail.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1193,7 +1193,7 @@
             "accordion_row_araXV3": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Are any purchases final sale?",
+                "heading": "Posso trocar ou devolver?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1202,7 +1202,7 @@
                 "text_Y6ebgG": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We are unable to accept returns on certain items. These will be carefully marked before purchase.</p>",
+                    "text": "<p>Sim! Você tem 7 dias após o recebimento para solicitar troca ou devolução. Compra 100% segura.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1233,7 +1233,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "When will I get my order?",
+                "heading": "É seguro comprar na Use Fyt?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1243,7 +1243,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "text": "<p>Totalmente! Utilizamos plataformas confiáveis e proteção SSL. Sua compra está protegida do início ao fim.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1274,7 +1274,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "Where are your products manufactured?",
+                "heading": "Quais formas de pagamento aceitam?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1284,7 +1284,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value. </p>",
+                    "text": "<p>Aceitamos cartão (em até 12x), PIX e boleto, via Mercado Pago.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1315,7 +1315,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "How much does shipping cost?",
+                "heading": "Como falo com o suporte?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1325,7 +1325,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Shipping is calculated based on your location and the items in your order. You will always know the shipping price before you purchase.</p>",
+                    "text": "<p>Entre em contato pelo WhatsApp (41) 98867-4177 ou envie um e-mail para contato@usefyt.com.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
