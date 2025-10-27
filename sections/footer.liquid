@@ -1,9 +1,10 @@
 
 
-<div class="section-background color-{{ section.settings.color_scheme }}"></div>
-<div
-  class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }}"
->
+<div class="footer-custom-wrapper">
+  <div class="section-background color-{{ section.settings.color_scheme }}"></div>
+  <div
+    class="section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }}"
+  >
   {% liquid
     assign total_blocks = section.blocks.size
 
@@ -45,11 +46,16 @@
     {% content_for 'blocks' %}
     
   </div>
-
+  </div>
 </div>
 
 {% stylesheet %}
   /* Mobile: Single column layout (base styles) */
+  .footer-custom-wrapper {
+    background-color: #f2f2f2;
+    padding: 30px 20px;
+  }
+
   .footer-content {
     display: grid;
     grid-template-columns: 1fr;
