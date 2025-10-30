@@ -159,6 +159,26 @@
                   },
                   "blocks": {}
                 },
+                "pix_highlight_TPq1sL": {
+                  "type": "pix-highlight",
+                  "settings": {
+                    "primary_label": "Pague",
+                    "highlight_text": "no pix",
+                    "note_text": "e Tenha envio Prioritário",
+                    "background_start": "#20b758",
+                    "background_end": "#2ed182",
+                    "icon_color": "#ffffff",
+                    "text_color": "#ffffff",
+                    "highlight_color": "#ffffff",
+                    "note_color": "#ffffff",
+                    "icon_size": 28,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
                 "payment_icons_briMN8": {
                   "type": "payment-icons",
                   "name": "t:names.payment_icons",
@@ -177,6 +197,7 @@
                 "text_xrnftG",
                 "judge_me_reviews_preview_badge_AA9tHc",
                 "price_tVjtKg",
+                "pix_highlight_TPq1sL",
                 "payment_icons_briMN8"
               ]
             },

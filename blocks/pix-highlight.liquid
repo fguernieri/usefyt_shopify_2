@@ -1,0 +1,220 @@
+{%- liquid
+  assign block_settings = block.settings
+  assign gradient_start = block_settings.background_start | default: '#20b758'
+  assign gradient_end = block_settings.background_end | default: '#2ed182'
+  assign icon_color = block_settings.icon_color | default: '#ffffff'
+  assign text_color = block_settings.text_color | default: '#ffffff'
+  assign highlight_color = block_settings.highlight_color | default: text_color
+  assign note_color = block_settings.note_color | default: text_color
+  assign icon_size = block_settings.icon_size | default: 28
+  assign primary_label = block_settings.primary_label | default: 'Pague'
+  assign highlight_text = block_settings.highlight_text | default: 'no pix'
+  assign note_text = block_settings.note_text | default: 'e Tenha envio Prioritário'
+-%}
+
+<div
+  class="product-pix spacing-style"
+  data-block-id="{{ block.id }}"
+  role="note"
+  style="
+    {% render 'spacing-style', settings: block_settings %}
+    background: linear-gradient(90deg, {{ gradient_start }} 0%, {{ gradient_end }} 100%);
+    --pix-envio-simb: {{ icon_color }};
+    --pix-envio-textdesc: {{ text_color }};
+    --pix-envio-textnopix: {{ highlight_color }};
+    --pix-envio-note: {{ note_color }};
+    --pix-envio-tsimb: {{ icon_size }}px;
+  "
+  {{ block.shopify_attributes }}
+>
+  <svg version="1.0" viewBox="0 0 901.000000 900.000000" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(0 900) scale(.1 -.1)">
+      <path d="m4265 8986c-216-42-357-99-536-217-83-54-204-172-1001-968-500-498-908-909-908-913 0-5 92-8 204-8 288 0 449-336 646-132 186-94 194-101 985-889 413-411 766-755 785-765 49-26 181-26 230 0 19 10 368 350 775 755 642 640 752 746 834 800 241 159 431 218 735 228l178 6-888 889c-489 489-920 913-959 943-157 121-324 202-519 252-88 22-127 26-296 29-136 2-216-1-265-10z"></path>
+      <path d="m861 5935c-485-487-577-584-630-664-102-154-154-272-199-450-25-99-27-121-27-321 0-191 3-225 24-310 49-199 134-377 256-535 30-38 299-315 598-614l544-543 359 1c403 2 467 8 607 55 204 69 179 48 1022 887 759 756 760 756 845 798 197 96 409 94 603-5 66-35 130-95 812-774 446-444 766-756 807-784 79-56 187-107 289-137 68-20 102-23 419-29 190-3 352-9 360-13 11-5 167 145 586 565 488 490 580 587 633 667 34 52 73 116 87 142 195 385 195 873 0 1258-14 26-53 90-87 142-53 80-145 177-633 667-419 420-575 570-586 565-8-4-170-10-360-13-317-6-351-9-419-29-102-30-210-81-289-137-40-28-364-343-812-789-802-798-778-776-930-823-175-53-368-27-525 70-29 18-367 347-805 782-837 833-813 812-1017 882-136 46-219 54-616 56l-348 3-568-570z"></path>
+      <path d="m4465 3913c-47-14-101-65-805-767-796-793-804-800-990-894-196-99-359-132-647-132-112 0-203-3-203-8 0-4 408-415 908-913 797-796 918-914 1001-968 154-102 272-154 450-199 99-25 121-27 321-27 191 0 225 3 310 24 199 49 377 134 535 256 39 30 470 454 959 943l888 889-178 6c-304 10-494 69-735 228-82 54-193 161-839 805-722 719-747 743-799 758-67 19-110 19-176-1z"></path>
+    </g>
+  </svg>
+
+  <div class="pix-value">
+    <strong>{{ primary_label }}</strong>
+    {% if highlight_text != blank %}
+      <span>{{ highlight_text }}</span>
+    {% endif %}
+    {% if note_text != blank %}
+      <div class="pix-envio">{{ note_text }}</div>
+    {% endif %}
+  </div>
+</div>
+
+{% stylesheet %}
+  .product-pix {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--gap-md);
+    margin-top: var(--margin-md);
+    padding-block: calc(var(--button-padding-block) * 0.15);
+    padding-inline: var(--button-padding-inline);
+    border-radius: 0;
+    color: var(--pix-envio-textdesc);
+    font-size: var(--font-size--xs);
+    font-weight: 500;
+    width: fit-content;
+    box-shadow: 0 4px 12px rgb(32 183 88 / 0.25);
+  }
+
+  .product-pix svg {
+    fill: var(--pix-envio-simb);
+    width: var(--pix-envio-tsimb);
+    height: var(--pix-envio-tsimb);
+    margin-right: 7px;
+  }
+
+  .product-pix .pix-value {
+    line-height: 1.1;
+  }
+
+  .product-pix .pix-value strong {
+    color: var(--pix-envio-textdesc);
+    font-weight: 700;
+    text-transform: none;
+  }
+
+  .product-pix .pix-value span {
+    margin-left: 4px;
+    color: var(--pix-envio-textnopix);
+    text-transform: none;
+  }
+
+  .product-pix .pix-envio {
+    color: var(--pix-envio-note, var(--pix-envio-textdesc));
+    text-transform: none;
+    margin-top: 2px;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "PIX highlight",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "primary_label",
+      "label": "Primary text",
+      "default": "Pague"
+    },
+    {
+      "type": "text",
+      "id": "highlight_text",
+      "label": "Highlight text",
+      "default": "no pix"
+    },
+    {
+      "type": "text",
+      "id": "note_text",
+      "label": "Supporting text",
+      "default": "e Tenha envio Prioritário"
+    },
+    {
+      "type": "header",
+      "content": "Appearance"
+    },
+    {
+      "type": "color",
+      "id": "background_start",
+      "label": "Gradient start",
+      "default": "#20b758"
+    },
+    {
+      "type": "color",
+      "id": "background_end",
+      "label": "Gradient end",
+      "default": "#2ed182"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Highlight color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "note_color",
+      "label": "Note color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon size",
+      "min": 12,
+      "max": 64,
+      "step": 1,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "Top padding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-start",
+      "label": "Left padding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-inline-end",
+      "label": "Right padding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "PIX highlight",
+      "category": "Product"
+    }
+  ]
+}
+{% endschema %}
