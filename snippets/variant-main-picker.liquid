@@ -52,7 +52,17 @@
             endif
           endfor
 
-          if block_settings.show_swatches and (swatch_count > 0 or (is_color_option and variant_option_has_media))
+          assign show_swatches = false
+
+          if block_settings.show_swatches
+            if swatch_count > 0
+              assign show_swatches = true
+            elsif is_color_option and variant_option_has_media
+              assign show_swatches = true
+            endif
+          endif
+
+          if show_swatches
             if block_settings.variant_style contains 'dropdown'
               assign variant_style = 'swatch_dropdown'
             else
