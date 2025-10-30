@@ -98,6 +98,40 @@
         </div>
       {%- endform -%}
     </product-form-component>
+    <div class="product-assurance" aria-label="Informações adicionais de compra">
+      <div class="product-assurance__header">
+        <span class="product-assurance__title">Formas de pagamento</span>
+        {% if shop.enabled_payment_types.size > 0 %}
+          <ul class="product-assurance__icons" role="list">
+            {%- for type in shop.enabled_payment_types -%}
+              <li class="product-assurance__icon">{{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}</li>
+            {%- endfor -%}
+          </ul>
+        {% endif %}
+      </div>
+      <p class="product-assurance__copy">Pagamentos e informações estão seguros.</p>
+      <p class="product-assurance__copy">Site oficial com todos os direitos reservados.</p>
+      <div class="product-assurance__benefits">
+        <div class="product-assurance__benefit">
+          <span class="product-assurance__benefit-title">Frete Grátis</span>
+          <span class="product-assurance__benefit-text">Frete grátis em pedidos acima de R$ 99.</span>
+        </div>
+        <div class="product-assurance__benefit">
+          <span class="product-assurance__benefit-title">Devoluções Gratuitas</span>
+          <span class="product-assurance__benefit-text">Estorno de 100% até 7 dias após o recebimento.</span>
+        </div>
+      </div>
+      {% if shop.shipping_policy.url != blank %}
+        <a
+          class="product-assurance__policy"
+          href="{{ shop.shipping_policy.url }}"
+          target="_blank"
+          rel="noopener"
+        >
+          Confira nossa política de frete
+        </a>
+      {% endif %}
+    </div>
   {%- else -%}
     <div class="product-form-buttons">
       <button
@@ -266,6 +300,107 @@
   .quantity-selector,
   .add-to-cart-button {
     height: var(--height-buy-buttons);
+  }
+
+  .product-assurance {
+    margin-top: var(--margin-lg);
+    padding: var(--padding-lg);
+    border-radius: 16px;
+    border: 1px solid rgb(var(--color-foreground-rgb) / var(--opacity-15));
+    background-color: rgb(var(--color-background-rgb) / var(--opacity-90));
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-sm);
+    box-shadow: 0 12px 32px rgb(var(--color-foreground-rgb) / 0.05);
+  }
+
+  .product-assurance__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap-sm);
+  }
+
+  .product-assurance__title {
+    font-size: var(--font-size--md);
+    font-weight: 600;
+  }
+
+  .product-assurance__icons {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-xs);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+
+  .product-assurance__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background: rgb(var(--color-background-rgb) / var(--opacity-90));
+    box-shadow: inset 0 0 0 1px rgb(var(--color-foreground-rgb) / var(--opacity-10));
+  }
+
+  .product-assurance__copy {
+    margin: 0;
+    font-size: var(--font-size--xs);
+    color: rgb(var(--color-foreground-rgb) / var(--opacity-70));
+  }
+
+  .product-assurance__benefits {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-sm);
+    padding-top: var(--padding-sm);
+    border-top: 1px solid rgb(var(--color-foreground-rgb) / var(--opacity-10));
+  }
+
+  @media screen and (min-width: 750px) {
+    .product-assurance__benefits {
+      flex-direction: row;
+    }
+  }
+
+  .product-assurance__benefit {
+    flex: 1 1 0;
+    padding: var(--padding-md);
+    border-radius: 12px;
+    background: rgb(var(--color-background-rgb) / var(--opacity-85));
+    box-shadow: inset 0 0 0 1px rgb(var(--color-foreground-rgb) / var(--opacity-8));
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .product-assurance__benefit-title {
+    font-weight: 600;
+  }
+
+  .product-assurance__benefit-text {
+    font-size: var(--font-size--xs);
+    color: rgb(var(--color-foreground-rgb) / var(--opacity-70));
+  }
+
+  .product-assurance__policy {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: var(--margin-xs);
+    font-size: var(--font-size--xs);
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .product-assurance__policy:hover {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
   }
 
   .product__pickup-availabilities {
