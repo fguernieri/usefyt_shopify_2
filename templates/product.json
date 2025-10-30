@@ -260,13 +260,18 @@
                 }
               },
               "block_order": []
+            },
+            "payment_methods_yJ6f4Q": {
+              "type": "payment-methods",
+              "settings": {}
             }
           },
           "block_order": [
             "group_icgrde",
             "divider_VJhene",
             "variant_picker_R3rGDr",
-            "buy_buttons_eYQEYi"
+            "buy_buttons_eYQEYi",
+            "payment_methods_yJ6f4Q"
           ]
         }
       },
