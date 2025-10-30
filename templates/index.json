@@ -83,8 +83,8 @@
               "settings": {
                 "text": "<h3>{{ closest.collection.title }}</h3>",
                 "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
+                "max_width": "none",
+                "alignment": "center",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
@@ -236,26 +236,6 @@
     },
     "hero_HCwTAz": {
       "type": "hero",
-      "blocks": {
-        "button_XN3RHY": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "2 Por 199",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-secondary",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "button_XN3RHY"
-      ],
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
