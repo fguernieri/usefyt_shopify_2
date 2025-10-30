@@ -1027,7 +1027,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><br/>A USE FYT nasceu da união entre movimento e propósito. Somos uma marca criada para mulheres que vivem com autenticidade — que se cuidam, se expressam e buscam equilíbrio entre corpo, mente e estilo. Cada peça é pensada para acompanhar o ritmo da vida moderna, unindo performance e elegância em um design minimalista e atemporal. Nosso propósito é elevar a rotina feminina por meio do conforto, da estética e do bem-estar, inspirando confiança em cada detalhe. Na USE FYT, acreditamos que vestir-se bem é sentir-se bem — dentro e fora do treino.<br/><br/></p>",
+            "text": "<p>A USE FYT nasceu da união entre movimento e propósito.<br/>Somos uma marca criada para mulheres que vivem com autenticidade — que se cuidam, se expressam e buscam equilíbrio entre corpo, mente e estilo.<br/><br/>Cada peça é pensada para acompanhar o ritmo da vida moderna, unindo performance e elegância em um design minimalista e atemporal.<br/><br/>Nosso propósito é elevar a rotina feminina por meio do conforto, da estética e do bem-estar, inspirando confiança em cada detalhe.<br/><br/>Na USE FYT, acreditamos que vestir-se bem é sentir-se bem — dentro e fora do treino.<br/></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
