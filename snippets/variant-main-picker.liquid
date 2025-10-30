@@ -37,9 +37,23 @@
         {%- liquid
           assign swatch_count = product_option.values | map: 'swatch' | compact | size
           assign variant_style = block_settings.variant_style
+          assign option_name_downcase = product_option.name | strip | downcase
+          assign is_color_option = false
 
-          if swatch_count > 0 and block_settings.show_swatches
-            if block_settings.variant_style == 'dropdown'
+          if option_name_downcase contains 'color' or option_name_downcase contains 'colour' or option_name_downcase contains 'cor'
+            assign is_color_option = true
+          endif
+
+          assign variant_option_has_media = false
+          for option_value in product_option.values
+            if option_value.variant and option_value.variant.featured_media
+              assign variant_option_has_media = true
+              break
+            endif
+          endfor
+
+          if block_settings.show_swatches and (swatch_count > 0 or (is_color_option and variant_option_has_media))
+            if block_settings.variant_style contains 'dropdown'
               assign variant_style = 'swatch_dropdown'
             else
               assign variant_style = 'swatch'
