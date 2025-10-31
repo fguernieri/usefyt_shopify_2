@@ -1,0 +1,34 @@
+    <div class="product-assurance" aria-label="Informações adicionais de compra">
+      <div class="product-assurance__header">
+        <span class="product-assurance__title">Formas de pagamento</span>
+        {% if shop.enabled_payment_types.size > 0 %}
+          <ul class="product-assurance__icons" role="list">
+            {%- for type in shop.enabled_payment_types -%}
+              <li class="product-assurance__icon">{{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}</li>
+            {%- endfor -%}
+          </ul>
+        {% endif %}
+      </div>
+      <p class="product-assurance__copy">Pagamentos e informações estão seguros.</p>
+      <p class="product-assurance__copy">Site oficial com todos os direitos reservados.</p>
+      <div class="product-assurance__benefits">
+        <div class="product-assurance__benefit">
+          <span class="product-assurance__benefit-title">Frete Grátis</span>
+          <span class="product-assurance__benefit-text">Frete grátis em pedidos acima de R$ 199 .</span>
+        </div>
+        <div class="product-assurance__benefit">
+          <span class="product-assurance__benefit-title">Devoluções Gratuitas</span>
+          <span class="product-assurance__benefit-text">Estorno de 100% até 7 dias após o recebimento.</span>
+        </div>
+      </div>
+      {% if shop.shipping_policy.url != blank %}
+        <a
+          class="product-assurance__policy"
+          href="{{ shop.shipping_policy.url }}"
+          target="_blank"
+          rel="noopener"
+        >
+          Confira nossa política de frete
+        </a>
+      {% endif %}
+    </div>
