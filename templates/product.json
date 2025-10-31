@@ -178,27 +178,13 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
-                },
-                "payment_icons_briMN8": {
-                  "type": "payment-icons",
-                  "name": "t:names.payment_icons",
-                  "settings": {
-                    "horizontal_alignment": "flex-start",
-                    "gap": 10,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
                 "text_xrnftG",
                 "judge_me_reviews_preview_badge_AA9tHc",
                 "price_tVjtKg",
-                "pix_highlight_TPq1sL",
-                "payment_icons_briMN8"
+                "pix_highlight_TPq1sL"
               ]
             },
             "divider_VJhene": {
@@ -218,7 +204,7 @@
               "settings": {
                 "variant_style": "buttons",
                 "show_swatches": true,
-                "alignment": "left",
+                "alignment": "center",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
