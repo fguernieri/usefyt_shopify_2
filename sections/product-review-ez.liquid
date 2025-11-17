@@ -1,0 +1,12 @@
+<script src="https://ezdrop.s3.sa-east-1.amazonaws.com/reviews/shopify/review-ez-shopify.js" defer></script>
+<link rel="stylesheet" href="https://ezdrop.s3.sa-east-1.amazonaws.com/reviews/shopify/review-ez-shopify.css">
+
+ <!-- Estrutura inicial do HTML com dados passados via atributos data-* -->
+  <div class="review-container page-width container container-fluid"
+       data-shop-url="{{ shop.permanent_domain }}"
+       data-metafields='{{ product.metafields.ezdrop_reviews | json | escape}}'
+       data-product-id="{{ product.id }}"
+        data-next-index="{{ next_index | json }}" style="padding: 30px 40px;"
+      >
+    <!-- O conteúdo será preenchido dinamicamente pelo JavaScript -->
+  </div>

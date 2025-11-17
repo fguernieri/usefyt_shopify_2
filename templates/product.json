@@ -9,6 +9,10 @@
  */
 {
   "sections": {
+    "product-review-ez": {
+      "type": "product-review-ez",
+      "settings": {}
+    },
     "main": {
       "type": "product-information",
       "blocks": {
@@ -529,6 +533,7 @@
   "order": [
     "main",
     "1761521178ac3ddf64",
-    "product_recommendations_qggXJq"
+    "product_recommendations_qggXJq",
+    "product-review-ez"
   ]
 }
