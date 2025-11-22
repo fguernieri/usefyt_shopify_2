@@ -81,7 +81,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3>{{ closest.collection.title }}<br/>Athleisure Urbano<br/><br/></h3>",
                 "width": "fit-content",
                 "max_width": "none",
                 "alignment": "center",
@@ -306,7 +306,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3>{{ closest.collection.title }}<br/>Tennis & Beach Tennis<br/><br/></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -500,7 +500,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3>{{ closest.collection.title }}<br/>Studio & Yoga<br/><br/></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -781,7 +781,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3>{{ closest.collection.title }}<br/>Bem-estar & Recovery<br/><br/></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
