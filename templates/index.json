@@ -155,7 +155,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}<br/>Athleisure Urbano<br/><br/></h3>",
+                "text": "<h4>{{ closest.collection.title }}</h4>",
                 "width": "fit-content",
                 "max_width": "none",
                 "alignment": "center",
@@ -289,7 +289,7 @@
       },
       "name": "t:names.products_grid",
       "settings": {
-        "collection": "favoritos-da-fyt",
+        "collection": "athleisure-urbano",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 4,
@@ -380,7 +380,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}<br/>Tennis & Beach Tennis<br/><br/></h3>",
+                "text": "<h4>{{ closest.collection.title }}</h4>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -514,7 +514,7 @@
       },
       "name": "t:names.products_grid",
       "settings": {
-        "collection": "bem-estar-movimento",
+        "collection": "tennis-e-beach-tennis",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 4,
