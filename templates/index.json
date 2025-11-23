@@ -1008,96 +1008,6 @@
         "padding-block-end": 48
       }
     },
-    "section_mNH7Hb": {
-      "type": "section",
-      "blocks": {
-        "text_LDHQeJ": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<p>QUEM SOMOS</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h3",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_zWCyq6": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<h5>A USE FYT nasceu da união entre movimento e propósito.</h5><p>Somos uma marca criada para mulheres que vivem com autenticidade — que se cuidam, se expressam e buscam equilíbrio entre corpo, mente e estilo.</p><p></p><p>Cada peça é pensada para acompanhar o ritmo da vida moderna, unindo performance e elegância em um design minimalista e atemporal.</p><p></p><p>Nosso propósito é elevar a rotina feminina por meio do conforto, da estética e do bem-estar, inspirando confiança em cada detalhe.</p><p></p><p>Na USE FYT, acreditamos que vestir-se bem é sentir-se bem — dentro e fora do treino.</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_LDHQeJ",
-        "text_zWCyq6"
-      ],
-      "name": "t:names.rich_text_section",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 25,
-        "section_width": "page-width",
-        "section_height": "large",
-        "section_height_custom": 100,
-        "color_scheme": "scheme-2",
-        "background_media": "image",
-        "video_position": "cover",
-        "background_image": "shopify://shop_images/Copia_de_Colecao_Moda_fitness_-_KIT_retrato_6.png",
-        "background_image_position": "cover",
-        "border": "solid",
-        "border_width": 0,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
-      }
-    },
     "section_EAR74p": {
       "type": "section",
       "blocks": {
@@ -1411,6 +1321,96 @@
         "background_image_position": "cover",
         "border": "none",
         "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
+    "section_mNH7Hb": {
+      "type": "section",
+      "blocks": {
+        "text_LDHQeJ": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<p>QUEM SOMOS</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_zWCyq6": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h5>A USE FYT nasceu da união entre movimento e propósito.</h5><p>Somos uma marca criada para mulheres que vivem com autenticidade — que se cuidam, se expressam e buscam equilíbrio entre corpo, mente e estilo.</p><p></p><p>Cada peça é pensada para acompanhar o ritmo da vida moderna, unindo performance e elegância em um design minimalista e atemporal.</p><p></p><p>Nosso propósito é elevar a rotina feminina por meio do conforto, da estética e do bem-estar, inspirando confiança em cada detalhe.</p><p></p><p>Na USE FYT, acreditamos que vestir-se bem é sentir-se bem — dentro e fora do treino.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_LDHQeJ",
+        "text_zWCyq6"
+      ],
+      "name": "t:names.rich_text_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "space-between",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 25,
+        "section_width": "page-width",
+        "section_height": "large",
+        "section_height_custom": 100,
+        "color_scheme": "scheme-2",
+        "background_media": "image",
+        "video_position": "cover",
+        "background_image": "shopify://shop_images/Copia_de_Colecao_Moda_fitness_-_KIT_retrato_6.png",
+        "background_image_position": "cover",
+        "border": "solid",
+        "border_width": 0,
         "border_opacity": 100,
         "border_radius": 0,
         "toggle_overlay": false,
@@ -2210,8 +2210,8 @@
     "product_list_8UbyXH",
     "hero_iV6wya",
     "product_list_4jFAY8",
-    "section_mNH7Hb",
     "section_EAR74p",
+    "section_mNH7Hb",
     "section_EdGyzT",
     "section_LC4CP9"
   ]
