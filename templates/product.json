@@ -9,10 +9,6 @@
  */
 {
   "sections": {
-    "product-review-ez": {
-      "type": "product-review-ez",
-      "settings": {}
-    },
     "main": {
       "type": "product-information",
       "blocks": {
@@ -298,6 +294,7 @@
                 },
                 "accelerated-checkout": {
                   "type": "accelerated-checkout",
+                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
@@ -528,6 +525,10 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "product-review-ez": {
+      "type": "product-review-ez",
+      "settings": {}
     }
   },
   "order": [
