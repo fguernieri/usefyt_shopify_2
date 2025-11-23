@@ -157,8 +157,8 @@
               "settings": {
                 "text": "<h4>{{ closest.collection.title }}</h4>",
                 "width": "fit-content",
-                "max_width": "none",
-                "alignment": "center",
+                "max_width": "normal",
+                "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
