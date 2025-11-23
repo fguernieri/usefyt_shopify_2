@@ -133,10 +133,6 @@
                   },
                   "blocks": {}
                 },
-                "judge_me_reviews_preview_badge_AA9tHc": {
-                  "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-                  "settings": {}
-                },
                 "price_tVjtKg": {
                   "type": "price",
                   "settings": {
@@ -234,7 +230,6 @@
               },
               "block_order": [
                 "text_xrnftG",
-                "judge_me_reviews_preview_badge_AA9tHc",
                 "price_tVjtKg",
                 "pix_highlight_TPq1sL",
                 "text_JKKTyw",
@@ -342,20 +337,10 @@
             "padding-block-end": 5
           },
           "blocks": {}
-        },
-        "judge_me_reviews_review_widget_cmhncY": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "real_data",
-            "max_width": 1200,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
         }
       },
       "block_order": [
-        "divider_kBJaPA",
-        "judge_me_reviews_review_widget_cmhncY"
+        "divider_kBJaPA"
       ],
       "settings": {
         "content_direction": "column",
@@ -384,6 +369,10 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "product-review-ez": {
+      "type": "product-review-ez",
+      "settings": {}
     },
     "product_recommendations_qggXJq": {
       "type": "product-recommendations",
@@ -525,16 +514,12 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
-    },
-    "product-review-ez": {
-      "type": "product-review-ez",
-      "settings": {}
     }
   },
   "order": [
     "main",
     "1761521178ac3ddf64",
-    "product_recommendations_qggXJq",
-    "product-review-ez"
+    "product-review-ez",
+    "product_recommendations_qggXJq"
   ]
 }
