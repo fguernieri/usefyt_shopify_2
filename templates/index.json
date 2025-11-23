@@ -12,6 +12,58 @@
     "hero_jVaWmY": {
       "type": "hero",
       "blocks": {
+        "text_UH4qrj": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>New arrivals</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_X6pNFr": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "button_EpiqLw": {
           "type": "button",
           "name": "t:names.button",
@@ -19,7 +71,7 @@
             "label": "Comprar agora",
             "link": "shopify://collections/athleisure-urbano",
             "open_in_new_tab": false,
-            "style_class": "button",
+            "style_class": "button-secondary",
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
@@ -29,6 +81,8 @@
         }
       },
       "block_order": [
+        "text_UH4qrj",
+        "text_X6pNFr",
         "button_EpiqLw"
       ],
       "name": "t:names.hero",
