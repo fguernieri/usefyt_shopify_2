@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>New arrivals</h2>",
+            "text": "<h2>Use Fyt.</h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -42,7 +42,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+            "text": "<p>Roupas de treino elegantes para quem quer <br/>sair da academia pronta para a vida.</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -68,8 +68,8 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Comprar agora",
-            "link": "shopify://collections/athleisure-urbano",
+            "label": "Ver Macaquinhos",
+            "link": "shopify://collections/macaquinhos-jumpsuits",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
