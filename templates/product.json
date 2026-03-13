@@ -184,6 +184,7 @@
                 "text_HAhAnR": {
                   "type": "text",
                   "name": "t:names.text",
+                  "disabled": true,
                   "settings": {
                     "text": "<p>Parcelamos em até 12x no 💳</p>",
                     "width": "fit-content",
