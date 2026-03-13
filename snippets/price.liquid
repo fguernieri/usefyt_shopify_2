@@ -76,4 +76,12 @@
     -%}
     {% render 'unit-price', price: unit_price, measurement: selected_variant.unit_price_measurement %}
   {%- endif -%}
+  {% if product.handle == closest.product.handle %}
+  {% assign installment_count = 12 %}
+  {% assign installment_value = selected_variant.price | divided_by: installment_count %}
+
+  <p style="margin-top:6px;font-size:14px;">
+    ou em até <strong>{{ installment_count }}x de {{ installment_value | money }}</strong>
+  </p>
+{% endif %}
 </div>
