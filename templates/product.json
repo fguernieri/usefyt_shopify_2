@@ -148,27 +148,7 @@
                     "letter_spacing": "normal",
                     "case": "none",
                     "color": "var(--color-foreground)",
-                    "padding-block-start": 4,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "pix_highlight_TPq1sL": {
-                  "type": "pix-highlight",
-                  "settings": {
-                    "primary_label": "Pague",
-                    "highlight_text": "no pix",
-                    "note_text": "e Tenha envio Prioritário",
-                    "background_start": "#20b758",
-                    "background_end": "#2ed182",
-                    "icon_color": "#ffffff",
-                    "text_color": "#ffffff",
-                    "highlight_color": "#ffffff",
-                    "note_color": "#ffffff",
-                    "icon_size": 28,
-                    "padding-block-start": 0,
+                    "padding-block-start": 10,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
@@ -231,7 +211,6 @@
               "block_order": [
                 "text_xrnftG",
                 "price_tVjtKg",
-                "pix_highlight_TPq1sL",
                 "text_JKKTyw",
                 "text_HAhAnR"
               ]
